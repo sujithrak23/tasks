@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       
+      /*let ob1 = { 
+        name: "siva",
+        age: 29
+    }
+      let ob2 = {
+        ...ob1,
+        gender: "M",
+        job: "gym owner"
+    }
+      console.log(ob2)*/
+
+
+
+
+
+
+
+
+       /* let obj = {
+            name : "surya",
+            gender : "F",
+            age : 34,
+            id : "DS$R"
+        }
+        let obj1 = { ...obj }; //spread syntax
+        let obj2 = Object.assign({} ,obj) //assign method
+        let obj3 = JSON.parse(JSON.stringify(obj)) //json method
+        let obj4 = obj; //normally assinging
+        console.log(obj)
+        console.log(obj1.name)
+        console.log(obj2.gender)
+        console.log(obj3.age)
+        console.log(obj4.id)*/
+
+
+
+
+
+
+
+        /*const sms = "demand"
+        function A(){
+         function B(data){
+                console.log(sms.concat("#",data))
+            }
+            return B
+        }
+        let call = A()
+        call("tomato")*/
+        
+        
+    /*function counter() {
+        let count = 0
+        return function increment() {
+         count++
+         console.log(count)
+    }
+    }
+
+
+
+
+
+
+    let a = counter()
+    for(let i=0;i<=5;i++){
+        a()
+    }
+
+    function counter() {
+        let count = 1
+        return {
+            count1:function() {
+             count++
+             console.log(count)
+            },
+            count2:function() {
+             count++
+             console.log(count)
+            },
+            count3:function() {
+             count++
+             console.log(count)
+            }
+    }
+    }
+    let loc = counter()
+     loc.count1()
+     loc.count2() 
+     loc.count3() 
+
+
+
+
+
+
+
+    const time = new Promise((reslove)=>{
+        let second = 5000
+        if(second == 5000){
+            resolve
+        }
+     })
+     time.then(greeting) 
+     function greeting(){
+        console.log("your are ontime")
+    }
+     
+
+
+
+
+
+const promise = new Promise(function(reslove){
+    setTimeout(() => {
+        reslove("greeting")
+    }, 5000);
+})
+console.log(promise)
+
+
+
+
+
+
+
+
+
+/*function random(num){
+return new Promise((reslove,reject)=>{
+   
+   if(num <= 1){
+    reslove("accepted")
+   } else{
+    reject("rejected")
+   }
+})
+}
+console.log(random(Math.random()))*/
+       
+
+
+
+
+
+
+
+
+
+/*let A = new Promise((reslove,reject)=>{
+    const eat = true
+    if(eat)
+        setTimeout(reslove,400,"A completely eated")
+    else
+        reject("A completely not eated")
+})
+
+let B = new Promise((reslove,reject)=>{
+    const eat = false
+    if(eat)
+        setTimeout(reslove,1000,"B completely eated")
+    else
+        reject("B completely not eated")
+})
+Promise.all([A,B])
+.then((msg)=>console.log("#"+msg))
+.catch((msg)=>console.log("#"+msg))
+
+Promise.allSettled([A,B])//
+.then((msg)=>console.log(msg))
+.catch((msg)=>console.log(msg))
+
+Promise.any([A,B])
+.then((msg)=>console.log("&"+msg))
+.catch((msg)=>console.log("&"+msg))
+
+Promise.race([A,B])
+.then((msg)=>console.log("%"+msg))
+.catch((msg)=>console.log("%"+msg))*/
+
+
+/*let urls=[
+('https://jsonplaceholder.typicode.com/posts/4'),
+('https://jsonplaceholder.typicode.com/posts/5'),
+];
+let reques=urls.map(url=>fetch(url));
+Promise.all(reques)
+.then(response=>response.forEach(
+response=>console.log(response)));*/
+
+/*function myFun()
+{
+return new Promise((resolve, reject) => {
+resolve("not understanding!!");
+});
+};
+let exe=async()=>{
+let promise=await(myFun());
+console.log(promise);
+}
+exe();*/
+
+/*async function fetchrequest()
+{
+let result=await fetch('https://jsonplaceholder.typicode.com/posts/4')
+let output=await result.json()
+console.log("User ID:"+ output.userId)
+console.log("Id: "+ output.id)
+console.log("Title: "+ output.title)
+}
+fetchrequest()*/
+
+
+/*async function fetchrequest()
+{
+try{
+let result=await fetch('https://jsonplaceholder.typicode.com/posts/4');
+let output=await result.JSON();
+console.log("User ID:"+output.userId);
+console.log("Id: "+output.id);
+console.log("Title: "+output.title);
+}
+catch(error)
+{
+console.log("Error in code");
+}
+}
+fetchrequest()*/
+
+
+/*let myFun= () => {
+return new Promise((resolve, reject) => {
+resolve("Hi!");
+});
+};
+let myFun1= () => {
+return new Promise((resolve, reject) => {
+resolve(" Hello! ");
+});
+};
+let exec=async () => {
+let promise=await Promise.all([
+myFun(),
+myFun1()
+]);
+console.log(promise);
+};
+exec();*/
+
+/*async function fetchAsync()
+{
+let result=await fetch('https://jsonplaceholder.typicode.com/posts/5');
+let output=await result.json();
+return output;
+}
+fetchAsync()
+.then((output)=>console.log(output))
+.catch((reason)=>console.log("Message:"+reason.message));
+*/
+
+
+
+    </script>
+
+
+</body>
+</html>
